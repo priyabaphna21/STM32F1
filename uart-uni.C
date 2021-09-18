@@ -81,7 +81,7 @@ int main()
 void ports(void)
 {
 	//Setting up GPIO pin A9
-	RCC ->APB2ENR |= RCC_APB2ENR_IOPBEN;
+	RCC ->APB2ENR |= RCC_APB2ENR_IOPAEN;
 	GPIOA ->CRH |= GPIO_CRH_MODE9 | GPIO_CRH_CNF9_1;
 	GPIOA ->CRH &= ~(GPIO_CRH_CNF9_0);
 
